@@ -1,37 +1,64 @@
 /**index.wxss**/
+
 /*列表*/
-.pro-item{
-  display: flex;
-  flex-direction: row;
-}
-.pro-thumb{
-  flex: 0 0 100rpx;
-}
-.pro-title{
-  flex: 1;
-}
-.pro-author{
-  flex: 0 0 100rpx;
+
+.pro-list {
+	width: 100%;
+	padding: 10rpx;
 }
 
+.pro-item {
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center;
+	border-bottom: 1px solid #d9d9d9;
+	margin: 0 20rpx;
+	height: 204rpx;
+	/*width: 710rpx;*/
+}
+
+.pro-thumb {
+	flex: 0 0 200rpx;
+  width: 200rpx;
+	height: 150rpx;
+  padding:5rpx;
+}
+
+.pro-title {
+	flex: 1;
+  padding-left: 20rpx;
+	display: block;
+	color: #333;
+	line-height: 50rpx;
+	font-size: 32rpx;
+}
+
+.pro-author {
+	flex: 0 0 120rpx;
+	display: block;
+	color: #999;
+	line-height: 50rpx;
+	font-size: 30rpx;
+}
 
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+	color: #aaa;
 }
 
 .usermotto {
-  margin-top: 200px;
+	margin-top: 200px;
 }

@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    report: {
+      id: 1,
+      title: '汽车节能对比',
+      time: '2018-4-23',
+      content: ''
+    }
   },
 
   /**

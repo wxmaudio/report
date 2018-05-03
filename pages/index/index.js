@@ -4,14 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    array: [{
-      title: '标题标题标题',
-      author:'李卫东',
-      thumb: '../images/thumb1.jpg'
+    reportList: [{
+      id:1,
+      title: '创业前景分析',
+      author:'阿庆',
+      thumb: '/images/thumb1.jpg'
     }, {
-      title: '标题标题标题',
-      author: '李卫东',
-      thumb: '../images/thumb1.jpg'
+      id:2,
+      title: '汽车节能对比',
+      author: '朗月',
+      thumb: '/images/car.jpg'
     }],
     motto: '测试',
     userInfo: {},
