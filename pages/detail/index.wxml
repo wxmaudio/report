@@ -1,2 +1,12 @@
 <!--pages/detail/index.wxml-->
-<text>pages/detail/index.wxml</text>
+<view>
+  <text class="title"></text>
+  <view class="author">
+    
+  </view>
+  <view class="time">
+  </view>
+  <view class="content">
+
+  </view>
+<view>

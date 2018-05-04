@@ -1,1 +1,10 @@
 /* pages/detail/index.wxss */
+.title {
+
+}
+.author{
+
+}
+.content{
+    
+}
