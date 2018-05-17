@@ -1,12 +1,10 @@
 <!--pages/detail/index.wxml-->
 <view>
-  <text class="title"></text>
-  <view class="author">
-    
-  </view>
-  <view class="time">
-  </view>
+    <text class="title center">{{title}}</text>
+    <view class="info center" >
+        <text class="author">{{author}}</text>         <text class="time">{{time}} </text>
+    </view>
   <view class="content">
-
+      {{content}}
   </view>
-<view>
+</view>

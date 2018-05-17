@@ -1,9 +1,29 @@
 /* pages/detail/index.wxss */
+.center{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:center;
+}
 .title {
-
+    font-size: 35rpx;
+    color: #222;
+    line-height: 38rpx;
+    height: 38rpx;
+    font-family: "微软雅黑";
+}
+.info{
+    margin: 0 auto;
+   text-align: center；
+    color: #999;
+    line-height: 24rpx;
+    height: 24rpx;
+    font-size: 20rpx;
+    font-family: "宋体";
+    padding: 35rpx 0 25rpx 0;
 }
 .author{
-
+  margin-right:10rpx;
 }
 .content{
     
