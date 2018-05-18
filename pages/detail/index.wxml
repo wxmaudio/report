@@ -1,5 +1,5 @@
 <!--pages/detail/index.wxml-->
-<view>
+<view class="detail-wrapper">
     <text class="title center">{{title}}</text>
     <view class="info center" >
         <text class="author">{{author}}</text>         <text class="time">{{time}} </text>
