@@ -37,3 +37,5 @@
     color: #666;
     line-height: 40px;
 }
+
+@import "../../lib/wxParse/wxParse.wxss";
