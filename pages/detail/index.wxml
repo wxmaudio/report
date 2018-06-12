@@ -6,6 +6,6 @@
     </view>
   <view class="content">
        <import src="../../lib/wxParse/wxParse.wxml" />
-      <template is="wxParse" data="{{wxParseData:content}}" />
+      <template is="wxParse" data="{{wxParseData:content.nodes}}" />
   </view>
 </view>
