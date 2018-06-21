@@ -1,0 +1,33 @@
+<import src="item-img.wxml"/>
+<template name="list">
+    <view wx:if="{{msg}}">{{msg}}</view>
+    
+    <view class="container">
+        <view class="list">
+            <view  wx:for="{{newsList}}" wx:key="{{index}}" id="{{item.id}}"  data-title="{{item.title}}" bindtap="getDetail">
+              <!-- <view wx:if="{{item.pictureList.length == 0}}" class="item">
+                  <template is="item" data="{{data: item, index:index}}"/>
+                </view> -->
+                <view  class="itemSingle">
+                  <template is="itemSingle" data="{{data: item, index:index}}"/>
+                </view>
+            </view>
+             
+        </view>
+    </view>
+
+    <view wx:if="{{loadMore === true }}" class="loading">
+          <text>加载中...</text>
+    </view>
+
+    <view wx:if="{{error}}" class="msg">
+        <view>服务器在开小差</view>
+        <view>请给它点时间醒过来</view>
+        <view style="margin-top:1rem;font-size:2rem">^_^</view>
+        <view class="refresh">
+          <button bindtap="reload">重试</button>
+        </view>
+    </view> 
+    <view class="noMore" wx:if="{{noMore}}">没有更多内容！</view>
+    <view class="{{overlay}}">   </view>
+</template>

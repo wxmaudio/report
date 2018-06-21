@@ -1,0 +1,5 @@
+<template name="itemSingle">
+<image class="image-img" src="{{data.picture}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0"></image>
+<view class="image-title"><rich-text>{{data.title}}</rich-text></view>
+</template>
+

@@ -1,0 +1,4 @@
+<import src="../templates/list-img.wxml"/>
+<view class="wrap">
+<template is="list" data="{{newsList:list,noMore:noMore,error:error,loadMore:loadMore}}"/>
+</view>
