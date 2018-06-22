@@ -1,0 +1,13 @@
+/* news.wxss */
+.news-wrap{
+  padding: 5rpx;
+}
+.news-time{
+
+}
+.news-list{
+  border-left: 1px solid #d9d9d9;
+}
+.news-item{
+  border-bottom: 1px solid #d9d9d9;
+}

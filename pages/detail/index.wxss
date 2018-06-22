@@ -1,6 +1,6 @@
 /* pages/detail/index.wxss */
 .detail-wrapper{
-  margin: 10rpx 20rpx;
+  padding: 40rpx 32rpx 24rpx;
 }
 .center{
     display:flex;
@@ -9,25 +9,33 @@
     justify-content:center;
 }
 .title {
-    font-size: 35rpx;
+    font-size: 44rpx;
+    line-height: 1.4;
+    margin-bottom: 28rpx;
     color: #222;
-    line-height: 38rpx;
-    height: 38rpx;
     font-family: "微软雅黑";
 }
 .info{
-    margin: 0 auto;
-   text-align: center；
+  margin-bottom: 44rpx;
+    line-height: 40rpx;
+    font-size: 0;
+    word-wrap: break-word;
+    word-break: break-all;
     color: #999;
-    line-height: 24rpx;
-    height: 24rpx;
-    font-size: 20rpx;
-    font-family: "宋体";
-    padding: 35rpx 0 25rpx 0;
-    border-bottom: #e5e5e5 1px solid;
+}
+.copyright{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 10px 0;
+    font-size: 15px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .author{
+   font-size: 15px;
   margin-right:10rpx;
+}
+.time{
+   font-size: 15px;
 }
 .content{
    padding: 15rpx 10rpx;

@@ -1,0 +1,9 @@
+<!--news.wxml-->
+<view>
+  <view>
+    <view class="news-time">2016-6-21</view>
+    <view class="news-list">
+
+    </view>
+  </view>
+</view>

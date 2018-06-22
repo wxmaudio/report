@@ -3,12 +3,34 @@
     "pages/index/index",
     "pages/detail/index",
     "pages/logs/logs",
-    "pages/research/research"
+    "pages/research/research",
+    "pages/news/news"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#cb0000",
     "navigationBarTitleText": "美丽中国",
     "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#3E3E3E",
+    "selectedColor": "#B4110C",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "科技快讯",
+        "iconPath": "images/icon_1.png",
+        "selectedIconPath": "images/icon_1a.png"
+      },
+      {
+        "pagePath": "pages/research/research",
+        "text": "行业研究",
+        "iconPath": "images/icon_2.png",
+        "selectedIconPath": "images/icon_2a.png"
+      }
+    ]
   }
 }

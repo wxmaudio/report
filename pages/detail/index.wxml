@@ -1,11 +1,13 @@
 <!--pages/detail/index.wxml-->
 <view class="detail-wrapper">
-    <text class="title center">{{title}}</text>
-    <view class="info center" >
-        <text class="author">{{author}}</text>         <text class="time">{{time}} </text>
+    <text class="title">{{title}}</text>
+    <view class="info" >
+    <text class="copyright">原创：史晨星</text>
+        <text class="author">{{author}}</text>         
+        <text class="time">{{time}} </text>
     </view>
   <view class="content">
-       <import src="../../lib/wxParse/wxParse.wxml" />
-      <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+    <import src="../../lib/wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
   </view>
 </view>

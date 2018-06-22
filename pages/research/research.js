@@ -14,7 +14,7 @@ Page({
       {
         nid: "http://www.lovelycn.cn/stwm/detail/image/20180517/1000600000015041526520960129422207_1.html",
         videoApi: null,
-        title: "废弃物装扮美丽乡村",
+        title: "废弃物装扮美丽乡村废弃物装扮美丽乡村废弃物装扮美丽乡村废弃物装扮美丽乡村废弃物装扮美丽乡村",
         description: "",
         picture: "http://img1.daguan.com/group1/M00/18/70/CgrZE1r83H-Ad_tqAAMNerH8VKw419.jpg",
         mname: "浙江在线",
@@ -48,9 +48,7 @@ Page({
       }
     ]
   },
-  getDetail:{
-
-  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

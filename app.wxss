@@ -1,9 +1,259 @@
 /**app.wxss**/
-.container {
+/*.container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+} */
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: auto;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  align-items: left;
+  padding: .7rem 1rem;
+  font-size:28rpx;
+  color:#222;
+  transition: height ease-in-out .7s;
+  /* min-height: 1300rpx; */
+  
 } 
+
+.list{
+  transition: height ease-in-out .7s;
+}
+
+.slides{
+  width: 100%;
+  height: 400rpx;
+  
+}
+.slides image{
+  width: 100%;
+  height: 400rpx;
+}
+.slides .text{
+  height:60rpx;
+  line-height:60rpx;
+  padding:0 .5rem;
+  width:100%;
+  position:absolute;
+  left:0;bottom:0;background-color:#000;
+  color:#fff;
+  opacity:.7;
+  font-size: 33rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slides .text-s{
+  height:60rpx;
+  line-height:60rpx;
+  margin:0 auto;
+  width:96%;
+  position:absolute;
+  left:2%;
+  bottom:50rpx;
+  color:#fff;
+  font-size: 33rpx;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0px 0px 3px #000;
+}
+
+/**List**/
+.item, .itemSingle, .itemMulti{
+  padding:.5rem 0;
+  border-bottom: 1px solid #EAE9E7;
+  min-height: 150rpx;
+  position: relative;
+  transition: display ease-in-out .7s;
+}
+.item:active, .itemSingle:active, .itemMulti:active{
+  /*background-color: #EAE9E7;*/
+  opacity: 0.5;
+}
+.item:visited .title, .itemSingle:visited .title, .itemMulti:visited .title{
+  color:green;
+}
+.title{
+  display: block;
+  display: -webkit-box;
+  font-weight: normal;
+  font-size: 35rpx;
+
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.image-title{
+  display: block;
+  display: -webkit-box;
+  font-weight: normal;
+  font-size: 38rpx;
+  line-height: 50rpx;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.des, .info,.image-info, .loading,.noMore{
+  color: #737373;
+  font-size: 28rpx;
+  font-weight: 260;
+  position: relative;
+}
+.itemSingle .info{
+
+  margin-top: .7rem;
+}
+.info .nname,.image-info .image-nname{
+  margin-right:.4rem;
+}
+.loading,.noMore{
+  text-align: center;
+  padding:.5rem;
+  align-items: center;
+  display: block;
+  width: 100%;
+  transition: all ease-in-out .7s;
+  opacity: 1;
+}
+
+.sign,.image-sign{
+  color: #B4110C;
+  float: right;
+  border: 1px solid #B4110C;
+  padding: 1rpx 5rpx;
+  border-radius: 2px;
+  margin-top: 0rpx;
+  font-size: 22rpx;
+  line-height: 24rpx;
+  text-align: center;
+}
+
+.img{
+  width: 32.4%;
+  height:150rpx;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+.image-img{
+  width: 100%;
+  height:423rpx;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.img.showImg{
+  opacity: 1;
+}
+.itemSingle .img{
+  position: absolute;
+  left: 0;
+  top:.5rem;
+}
+.itemSingle .content{
+  margin-left: 32.4%;
+  padding-left:.5rem;
+  content: 150rpx;
+  overflow: hidden;
+}
+.itemSingle .title{
+  height: 100rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  margin-top: -4rpx;
+}
+
+.itemMulti .imgBox{
+  margin-top: .5rem;
+  text-align: center;
+  display: relative;
+}
+
+.itemMulti .img-0{
+  float: left;
+}
+.itemMulti .img-2{
+  float: right;
+}
+.em{
+  font-weight: bolder;
+}
+.msg{
+  text-align: center;
+  }
+.msg .refresh{
+  padding: 30rpx;
+}
+.msg.abs{
+  top:350rpx;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-wrap{
+  height: 85rpx;
+}
+.nav{
+  display: flex;
+  
+  /* position: fixed; */
+  width: auto;
+  
+  z-index: 10;
+  flex-flow: row;
+}
+.nav .menu{
+  display: inline-block;
+  text-align: center;
+  width:150rpx;
+  min-width:140rpx;
+  height: 83rpx;
+  line-height: 83rpx;
+  font-size: 35rpx;
+  font-weight: 450;
+  letter-spacing: 3rpx;
+}
+.nav .menu.active{
+  color:#B4110C;
+  border-bottom: 6rpx solid #B4110C;
+}
+
+.overlay{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+
+}
+
+.toutiaoDixian{
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 28rpx;
+  color: #737373;
+}
