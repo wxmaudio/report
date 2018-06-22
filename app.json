@@ -17,17 +17,17 @@
     "selectedColor": "#B4110C",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "white",
-    "position": "bottom",
+    "position": "top",
     "list": [
       {
         "pagePath": "pages/news/news",
-        "text": "科技快讯",
+        "text": "育儿百科",
         "iconPath": "images/icon_1.png",
         "selectedIconPath": "images/icon_1a.png"
       },
       {
         "pagePath": "pages/research/research",
-        "text": "行业研究",
+        "text": "科技前研",
         "iconPath": "images/icon_2.png",
         "selectedIconPath": "images/icon_2a.png"
       }

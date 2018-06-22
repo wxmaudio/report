@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;*/
   align-items: left;
-  padding: .7rem 1rem;
+  padding:0rpx 2rpx;
   font-size:28rpx;
   color:#222;
   transition: height ease-in-out .7s;
@@ -77,7 +77,7 @@
 
 /**List**/
 .item, .itemSingle, .itemMulti{
-  padding:.5rem 0;
+  padding:.3rem 0;
   border-bottom: 1px solid #EAE9E7;
   min-height: 150rpx;
   position: relative;
