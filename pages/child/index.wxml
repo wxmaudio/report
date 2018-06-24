@@ -2,5 +2,5 @@
 <!--index.wxml-->
 <import src="../templates/list.wxml"/>
 <view class="wrap">   
-<template is="list" data="{{newsList:list,noMore:noMore,error:error,loadMore:loadMore}}"/>
+<template is="list" data="{{list:list,noMore:noMore,error:error,loadMore:loadMore}}"/>
 </view>
