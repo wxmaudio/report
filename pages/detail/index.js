@@ -10,7 +10,7 @@ Page({
     id: 1,
     title: '汽车节能对比',
     time: '2018-4-23',
-    content: '<p>werewrwerewcontent</p><div><img src="http://n1.map.pg0.cn/T1zMYQB7Ev1RCvBVdK-321-192-3.jpg"/></div>',
+    content: '<a href="http://www.chinaso.com"></a><p>werewrwerewcontent</p><div><img src="http://n1.map.pg0.cn/T1zMYQB7Ev1RCvBVdK-321-192-3.jpg"/></a></div>',
     author:'beart'
   },
 

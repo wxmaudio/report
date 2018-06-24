@@ -7,9 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    content: false,
-    fontset: 'small',
     list: [
       {
         nid: "http://www.lovelycn.cn/stwm/detail/image/20180517/1000600000015041526520960129422207_1.html",

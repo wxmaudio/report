@@ -5,6 +5,7 @@
 <text class="image-tag">能源</text>
 </view>
 <view class="image-title"><rich-text>{{data.title}}</rich-text></view>
+
 </navigator>
 </template>
 

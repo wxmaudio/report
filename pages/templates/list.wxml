@@ -1,59 +1,27 @@
-<import src="item.wxml"/>
+<import src="item.wxml" />
 <template name="list">
-    
-    <swiper wx:if="{{slides && slides.length > 0}}" class="slides" indicator-dots="{{false}}"
-  autoplay="true" interval="{{3500}}" duration="{{500}}" style="background:#000;">
-      
-        <swiper-item  wx:for="{{slides}}" id="{{item.id}}" wx:key="{{index}}" data-news="{{item.nid}}"  bindtap="getDetail">
-          <image src="{{item.pictureList[0]}}" mode="aspectFill"/>
-          <view class="text">{{item.title}}</view>
-        </swiper-item>
-      
-    </swiper>
-
-    <view wx:if="{{msg}}">{{msg}}</view>
-    
-    <view class="container">
-        <view class="list">
-            <view  wx:for="{{newsList}}" wx:key="{{index}}" id="{{item.id}}" data-news="{{item.nid}}" data-title="{{item.title}}" data-wapUrl="{{item.wapUrl}}"  bindtap="getDetail">
-              <!-- <view wx:if="{{item.wapUrl}}" class=""></view>
-              <view wx:else>
-                <view wx:if="{{item.pictureList.length == 0}}" class="item">
-                  <template is="item" data="{{data: item, index:index}}"/>
-                </view>
-                <view wx:if="{{item.pictureList.length == 1}}" class="itemSingle">
-                  <template is="itemSingle" data="{{data: item, index:index}}"/>
-                </view>
-                <view wx:if="{{item.pictureList.length >=3}}" class="itemMulti">
-                  <template is="itemMulti" data="{{data: item, index:index}}"/>
-                </view>
-              </view> -->
-              <view wx:if="{{item.pictureList.length == 0}}" class="item">
-                  <template is="item" data="{{data: item, index:index}}"/>
-                </view>
-                <view wx:if="{{item.pictureList.length == 1}}" class="itemSingle">
-                  <template is="itemSingle" data="{{data: item, index:index}}"/>
-                </view>
-                <view wx:if="{{item.pictureList.length >=3}}" class="itemMulti">
-                  <template is="itemMulti" data="{{data: item, index:index}}"/>
-                </view>
-            </view>
-             
+  <view class="container">
+    <view class="list">
+      <view wx:for="{{newsList}}" id="{{item.id}}" data-title="{{item.title}}" bindtap="getDetail">
+        <view class="itemSingle">
+           <template is="itemSingle" data="{{data: item, index:index}}" />
         </view>
+      </view>
     </view>
 
-    <view wx:if="{{loadMore === true }}" class="loading">
-          <text>加载中...</text>
-    </view>
+  </view>
 
-    <view wx:if="{{error}}" class="msg">
-        <view>服务器在开小差</view>
-        <view>请给它点时间醒过来</view>
-        <view style="margin-top:1rem;font-size:2rem">^_^</view>
-        <view class="refresh">
-          <button bindtap="reload">重试</button>
-        </view>
-    </view> 
-    <view class="noMore" wx:if="{{noMore}}">没有更多内容！</view>
-    <view class="{{overlay}}">   </view>
+  <view wx:if="{{loadMore === true }}" class="loading">
+    <text>加载中...</text>
+  </view>
+
+  <view wx:if="{{error}}" class="msg">
+    <view>服务器在开小差</view>
+    <view>请给它点时间醒过来</view>
+    <view style="margin-top:1rem;font-size:2rem">^_^</view>
+    <view class="refresh">
+      <button bindtap="reload">重试</button>
+    </view>
+  </view>
+  <view class="noMore" wx:if="{{noMore}}">没有更多内容！</view>
 </template>

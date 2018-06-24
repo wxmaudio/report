@@ -2,22 +2,23 @@
   <view class="title"><rich-text name="em">{{data.title}}</rich-text></view>
   <view class="des"><text>{{data.description}}</text></view>
   <view class="info">
-    <text class="nname">{{data.mname}}</text>
+    <text class="nname">{{data.source}}</text>
     <text>  {{data.timeAgo}}</text>
     <text wx:if="{{data.sign}}" class="sign">{{data.sign}}</text>
   </view>
 </template>
 
 <template name="itemSingle">
-  <image class="img" src="{{data.pictureList[0]}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0" data-ttt="{{this.dataset.opacity}}"></image>
+<navigator url="../detail/index?id=xx">
+  <image class="img" src="{{data.imageurl}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0"></image>
   <view class="content">
     <view class="title"><rich-text>{{data.title}}</rich-text></view>
     <view class="info">
-        <text class="nname" style="display:inline-block;max-width:9em">{{data.mname}}</text>
-        <text>  {{data.timeAgo}}</text>
-        <text wx:if="{{data.sign}}" class="sign">{{data.sign}}</text>
+        <text class="nname" style="display:inline-block;max-width:9em">{{data.source}}</text>
+        <text>  {{data.time}}</text>
     </view>
   </view>
+  </navigator>
 </template>
 
 <template name="itemMulti">
