@@ -20,16 +20,16 @@
     "position": "bottom",
     "list": [
       {
-        "pagePath": "pages/child/index",
-        "text": "育儿百科",
-        "iconPath": "images/icon_1.png",
-        "selectedIconPath": "images/icon_1a.png"
-      },
-      {
         "pagePath": "pages/research/research",
         "text": "科技前研",
         "iconPath": "images/icon_2.png",
         "selectedIconPath": "images/icon_2a.png"
+      },
+      {
+        "pagePath": "pages/child/index",
+        "text": "育儿百科",
+        "iconPath": "images/icon_1.png",
+        "selectedIconPath": "images/icon_1a.png"
       }
     ]
   }
