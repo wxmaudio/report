@@ -10,45 +10,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: []/*[
-      {
-        _id: "heauxvy7222756",
-        title: "儿童家具质量抽检三成不合格 家长选购需注意",
-        url: "https://baby.sina.cn/mygz/2018-06-18/detail-iheauxvy7222756.d.html?&cid=73384",
-        pc_url: "http://baby.sina.com.cn/news/2018-06-18/doc-iheauxvy7222756.shtml",
-        time: "6月18日 06:30",
-        type: "normal",
-        imageurl: "https://k.sinaimg.cn/n/top/transform/500/w300h200/20180617/kSQo-heauxvy7220334.png/w120h90l50t1b2f.jpg",
-        source: "央视新闻移动网",
-        summary: "儿童家具质量抽检三成不合格 家长选购需注意"
-      },
-      {
-        _id: "heauxvy7231596",
-        title: "协和儿科鲍秀兰：科学帮助宝宝预防营养性贫血",
-        url: "https://baby.sina.cn/mygz/2018-06-18/detail-iheauxvy7231596.d.html?&cid=73384",
-        time: "6月18日 06:30",
-        type: "normal",
-        imageurl: "https://k.sinaimg.cn/n/baby/transform/20170309/SfRs-fychhus0175846.jpg/w120h90l50t19ae.jpg",
-        source: "钱江晚报",
-        summary: "协和儿科鲍秀兰：科学帮助宝宝预防营养性贫血",
-      },
-      {
-        _id: "heauxvy7226389",
-        title: "育儿十大坎 新手妈妈快快get起来",
-        stitle: "育儿十大坎 新手妈妈快快get起来",
-        url: "https://baby.sina.cn/mygz/2018-06-18/detail-iheauxvy7226389.d.html?&cid=73384",
-        time: "6月18日 06:30",
-        imageurl: "https://k.sinaimg.cn/n/baby/transform/500/w300h200/20180620/Kjc2-hefphqk1196540.jpg/w120h90l50t1af4.jpg",
-        type: "normal",
-        source: "海外网",
-        summary: "育儿十大坎 新手妈妈快快get起来",
-      } ]*/
+    list: []
+    /*list: [{
+      id: 9,
+      title: "婴儿沐浴秘诀",
+      author: "转载",
+      originalAuthor: "2",
+      icon: "https://mmbiz.qlogo.cn/mmbiz_png/2rOr1xCIpmvEhdeQXk0HHC0En9rib0p3bTEqGIhLAtBs8nB4yqm1mJ6MedL6pYpibb6CicyCQOa6zpRGY5gHlvnIw/0?wx_fmt=png",
+      writeType: 2,
+      catId: 2,
+      writeTime: "2018-06-25T02:22:52.000+0000",
+      updateTime: "2018-06-25T02:23:04.000+0000",
+      createdTime: "2018-06-25T02:23:04.000+0000",
+      url: "http://mp.weixin.qq.com/s?__biz=MzIxMDE5OTIyOA==&mid=2247483664&idx=8&sn=858221ac0fd897ec8b1e1d3a3f73d76c&chksm=976976c3a01effd5cf4b0c93cf76e1075dc78cb404bda41c8ddfaf668ca6db49ec9f9eb3613a#rd"
+      }]*/
   },
   getDetail: function(e){
-    let url = "/pages/detail/index?id=" + e.currentTarget.dataset.id;
+    /* let url = "/pages/detail/index?id=" + e.currentTarget.dataset.id;
     wx.navigateTo({
       url
-    });
+    });*/
   },
   /**
    * 生命周期函数--监听页面加载
