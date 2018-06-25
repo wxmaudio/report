@@ -1,11 +1,16 @@
-// news.js
+import {loadList} from '../../utils/request';
+import api from '../../config/api';
+
+const url = api.listAPI;
+//获取应用实例
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
+    list: []/*[
       {
         _id: "heauxvy7222756",
         title: "儿童家具质量抽检三成不合格 家长选购需注意",
@@ -37,14 +42,29 @@ Page({
         type: "normal",
         source: "海外网",
         summary: "育儿十大坎 新手妈妈快快get起来",
-      } ]
+      } ]*/
   },
-
+  getDetail: function(e){
+    let url = "/pages/detail/index?id=" + e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.showLoading({
+      title: '加载中...',
+    })
+    loadList(url, {
+      pageNum: 1,
+      pageSize: 8,
+      catId: 2
+    }, this, function(context, res) {
+      context.setData({ list: res.data});
+      wx.hideLoading();
+    });
   },
 
   /**

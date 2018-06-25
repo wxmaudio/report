@@ -8,17 +8,22 @@
   </view>
 </template>
 
+<!--单条新闻，左图右文-->
 <template name="itemSingle">
-<navigator url="../detail/index?id=xx">
-  <image class="img" src="{{data.imageurl}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0"></image>
+  <!--
+<navigator url="../detail/index?{{data.id}}">
+-->
+  <image class="img" src="{{data.icon}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0"></image>
   <view class="content">
     <view class="title"><rich-text>{{data.title}}</rich-text></view>
     <view class="info">
-        <text class="nname" style="display:inline-block;max-width:9em">{{data.source}}</text>
-        <text>  {{data.time}}</text>
+        <text class="nname" style="display:inline-block;max-width:9em">{{data.author}}</text>
+        <text>  {{data.update_time}}</text>
     </view>
   </view>
+  <!--
   </navigator>
+  -->
 </template>
 
 <template name="itemMulti">

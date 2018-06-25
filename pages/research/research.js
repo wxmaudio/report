@@ -1,21 +1,8 @@
-// research.js
+import {loadList} from '../../utils/request';
+import api from '../../config/api';
 //获取应用实例
 const app = getApp();
-const RESEARCH_URL = "http://47.104.85.144/article?pageNum=1&pageSize=2&catId=1";
-function loadList(url, params, context, callback) {
-  wx.request({
-    url: url,
-    data: params,
-    header: {
-      'content-type': 'application/json'
-    },
-    success: function (res) {   
-      console.log(res, res.data); 
-      context.setData({ list: res.data.data});
-      callback();
-    }
-  });
-}
+const url = api.listAPI;
 
 Page({
 
@@ -73,15 +60,21 @@ Page({
     wx.showLoading({
       title: '加载中...',
     })
-    loadList(RESEARCH_URL, {
+    loadList(url, {
       pageNum: 1,
-      pageSize: 2,
+      pageSize: 8,
       catId: 1
-    }, this, function() {
+    }, this, function(context, res) {
+      context.setData({ list: res.data});
       wx.hideLoading();
     });
   },
-
+  getDetail(e){
+    let url = '/page/detail/index?id=' + e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

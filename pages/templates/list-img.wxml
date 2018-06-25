@@ -4,7 +4,7 @@
     
     <view class="container">
         <view class="list">
-            <view  wx:for="{{list}}" wx:key="{{index}}" id="{{item.id}}"  data-title="{{item.title}}" bindtap="getDetail">
+            <view  wx:for="{{list}}" wx:key="{{index}}" id="{{item.id}}"  data-id="{{item.id}}" bindtap="getDetail">
               <!-- <view wx:if="{{item.pictureList.length == 0}}" class="item">
                   <template is="item" data="{{data: item, index:index}}"/>
                 </view> -->

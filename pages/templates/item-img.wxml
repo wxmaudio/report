@@ -1,11 +1,8 @@
 <template name="itemSingle">
-<navigator class="pro-item" url="../detail/index?id=xx">
 <view class="image-wrap">
 <image class="image-img" src="{{data.icon}}" mode="aspectFill" binderror="imgError" bindload="imgLoaded" data-item="{{index}}" data-imgIndex="0"></image>
 <text class="image-tag">能源</text>
 </view>
 <view class="image-title"><rich-text>{{data.title}}</rich-text></view>
-
-</navigator>
 </template>
 

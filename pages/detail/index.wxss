@@ -1,4 +1,5 @@
 /* pages/detail/index.wxss */
+@import "../../lib/wxParse/wxParse.wxss";
 .detail-wrapper{
   padding: 40rpx 32rpx 24rpx;
 }
@@ -45,5 +46,3 @@
     color: #666;
     line-height: 40px;
 }
-
-@import "../../lib/wxParse/wxParse.wxss";
